@@ -1,7 +1,15 @@
-const input = document.querySelector("#guess").innerHTML
-console.log(input.value);
-const submit = document.querySelector(".guess_label")
-console.log(submit);
-// do {
+let submit = document.querySelector(".submit");
 
-// } while (condition)
+let message = document.querySelector(".message");
+
+let randomNumber = Math.floor(Math.random() * 100);
+submit.addEventListener("click", () => {
+    let input = document.querySelector("#guess").value;
+    if (input == randomNumber) {
+        message.innerHTML = `Congratulations You guessed right, your number is ${randomNumber} 💪🏻`;
+    } else if (input < randomNumber) {
+        message.innerHTML = "❗ You should increase the number ❗";
+    } else if (input > randomNumber) {
+        message.innerHTML = "❗ You should reduce the number ❗";
+    }
+})

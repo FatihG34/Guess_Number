@@ -3,24 +3,37 @@ body{
 }
 section{
     position: relative;
-    top: 40vh;
+    top: 20vh;
     margin: auto;
-    width: 25rem;
+    width: 60rem;
 
 
-    form{
+    div{
     background-color:blueviolet;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: large;
+    font-size: 2rem;
     padding: 2rem;
-    row-gap: 2rem;
+    row-gap: 1rem;
 
     .submit{
         width: 40%;
-        margin-top: 2rem;
+        height: 2rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        border: 1px solid white;
+        background-color: aqua;
+        font-size: large;
     }
+    #guess{
+        height: 2.2rem;
+        font-size: larger;
+        border-radius: .4rem;
+        outline: none;
+    }
+    
 }
 }
