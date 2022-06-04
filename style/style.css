@@ -1,0 +1,26 @@
+body {
+  background-color: bisque;
+}
+
+section {
+  position: relative;
+  top: 40vh;
+  margin: auto;
+  width: 25rem;
+}
+section form {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  padding: 2rem;
+  row-gap: 2rem;
+}
+section form .submit {
+  width: 40%;
+  margin-top: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
