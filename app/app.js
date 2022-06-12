@@ -32,8 +32,6 @@ submit.addEventListener("click", () => {
                 hak--;
                 document.querySelector("div").style.backgroundColor = "red"
                 document.querySelector("body").style.backgroundColor = "black"
-                message.style.color = "black"
-                message1.style.color = "black"
                 message1.innerHTML = hak == 0
                     ? `You are lost, ${input} is not correct`
                     : `You have ${hak} attempts left `;

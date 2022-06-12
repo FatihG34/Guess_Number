@@ -6,12 +6,14 @@
 
 body {
   background-color: cadetblue;
+  width: 100vw;
+  height: 100vh;
 }
 
 section {
   position: relative;
   top: 10vh;
-  margin: auto;
+  margin: 0 auto;
   width: 70rem;
 }
 section div {
@@ -54,6 +56,31 @@ section div #guess {
   font-size: larger;
   border-radius: 0.4rem;
   outline: none;
+}
+
+@media screen and (max-width: 780px) {
+  section {
+    width: 20rem;
+    font-size: 1rem;
+    margin: auto;
+  }
+  section div {
+    background-size: 40% 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  section div .submit {
+    width: 45%;
+    font-size: 0.75rem;
+  }
+  section div #guess {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  section {
+    width: 15rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
